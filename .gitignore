@@ -1,0 +1,17 @@
+# Pastas de compilação (Culpadas pelo rótulo TeX)
+build/
+dist/
+release/
+Backup_release/
+
+# Arquivos temporários e executáveis
+*.exe
+*.toc
+*.spec
+*.pyc
+__pycache__/
+
+# Logs e metadados
+*.log
+*.txt
+!requirements.txt
