@@ -29,19 +29,15 @@ O sistema mostra progresso em tempo real, estimativa de tempo restante e estatí
 
 ```
 Projeto_Backup/
-│
-├── Backup_release/       # Versões de backup
-├── assets/               # Ícones e recursos visuais
-├── build/                # Artefatos de build (PyInstaller)
-├── release/              # Pacotes finais
-├── spec/                 # Arquivos .spec do PyInstaller
-├── src/
-│   ├── backup.py          # Script principal
-│   ├── criar_icone.py     # Script auxiliar para ícones
-│   └── gerar_exe.py       # Script para empacotar em .exe
-├── README.md             # Documentação principal
-├── backup.spec           # Configuração PyInstaller
-└── requirements.txt      # Dependências do projeto
+├── src/                # Código-fonte principal do projeto (.py)
+├── assets/             # Recursos visuais (ícones e imagens do projeto)
+├── Backup_release/     # Pasta contendo o executável final e documentação de uso
+│   ├── Backup.exe      # Executável do sistema de backup
+│   └── README.md       # Instruções específicas para o usuário final
+├── .gitignore          # Define arquivos e pastas ignorados pelo Git (build, spec, etc.)
+├── README.md           # Documentação principal do projeto (este arquivo)
+├── backup.spec         # Arquivo de configuração para geração do executável
+└── requirements.txt    # Lista de dependências Python necessárias para o projeto
 
 ```
 
@@ -81,6 +77,7 @@ pyinstaller --onefile --windowed src/backup.py --icon=assets/backup_icone.ico
 Licença
 Este projeto é de uso pessoal/educacional.
 Sinta-se livre para adaptar e compartilhar conforme necessário.
+
 
 
 
